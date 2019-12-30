@@ -1,0 +1,25 @@
+$base-color: #dec79b;
+$font-color: #18181e;
+
+* {
+  font: "Playfair Display", serif;
+  font-weight: lighter;
+}
+.nav-items {
+  background: $base-color;
+  display: flex;
+  font-size: 1rem;
+  color: $font-color;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 1rem;
+
+  li:first-child {
+    margin-right: auto;
+  }
+
+  li {
+    margin: 0 4rem;
+  }
+}
