@@ -5,16 +5,15 @@ $font-color: #18181e;
   font: "Playfair Display", serif;
   font-weight: lighter;
 }
+
 .nav-items {
-  background: $base-color;
+  background: white;
   display: flex;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: $font-color;
   flex-direction: row;
   list-style: none;
   justify-content: flex-end;
-  padding: 1rem;
-
   li:first-child {
     margin-right: auto;
   }

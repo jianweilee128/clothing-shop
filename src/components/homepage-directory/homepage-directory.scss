@@ -1,0 +1,22 @@
+.preview-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  .description-container {
+    margin: 5px;
+    border: 1px solid black;
+    min-width: 50%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    background-image: url("../../resources//showcase/explore1.jpg");
+  }
+
+  .category-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
