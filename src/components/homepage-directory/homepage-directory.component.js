@@ -7,18 +7,15 @@ import MenuItem from "../menu-item/menu-item.component";
 
 const HomePageDirectory = () => (
   <div className="preview-container">
-    <div className="description-container">
-      <h1>We provide the best</h1>
-    </div>
     <div className="category-container">
       <MenuItem
         className="men-container"
-        category="MEN"
+        category="men"
         imageUrl={menPreview}
       />
       <MenuItem
         className="women-container"
-        category="WOMEN"
+        category="women"
         imageUrl={womenPreview}
       />
     </div>

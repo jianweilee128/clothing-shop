@@ -1,12 +1,12 @@
 import React from "react";
-import "./link-button.scss";
+import "./directory-button.scss";
 
 import { Link } from "react-router-dom";
 
-const LinkButton = ({ description }) => (
+const DirectoryButton = ({ description }) => (
   <Link className="btn-link" to={`/${description}`}>
     {description}
   </Link>
 );
 
-export default LinkButton;
+export default DirectoryButton;
