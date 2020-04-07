@@ -1,11 +1,32 @@
 .preview-container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+  flex-direction: row;
+}
 
-  .category-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.men-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.women-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.bottom-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

@@ -1,26 +1,31 @@
 $base-color: #dec79b;
 $font-color: #18181e;
 
-* {
-  font: "Playfair Display", serif;
-  font-weight: lighter;
-}
-
-.nav-items {
-  background: white;
+.nav-container {
   display: flex;
-  font-size: 1.3rem;
-  color: $font-color;
   flex-direction: row;
-  list-style: none;
-  justify-content: flex-end;
-  padding: 5px;
+  font-size: 1.3rem;
+  color: #18181e;
   box-sizing: border-box;
-  li:first-child {
-    margin-right: auto;
+  padding: 0 30px;
+  text-transform: uppercase;
+
+  .title {
+    text-decoration: none;
+    color: #18181e;
+    box-sizing: border-box;
+    padding: 0 30px;
   }
 
-  li {
-    margin: 0 7rem;
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    margin-left: auto;
+    list-style: none;
+  }
+
+  .item {
+    margin: 0 20px;
   }
 }

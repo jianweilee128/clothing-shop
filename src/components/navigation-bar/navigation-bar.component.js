@@ -1,15 +1,19 @@
-import React, { Fragment } from "react";
+import React from "react";
 import "./navigation-bar.scss";
+import { Link } from "react-router-dom";
+
 import { ReactComponent as CartIcon } from "../../resources/icons/cartIcon.svg";
 
 const NavigationBar = () => (
-  <Fragment>
+  <div className="nav-container">
+    <Link to="/" className="title">
+      Home
+    </Link>
     <ul className="nav-items">
-      <li>Home</li>
-      <CartIcon />
-      <li>Login</li>
+      <CartIcon className="item" />
+      <li className="item">Login</li>
     </ul>
-  </Fragment>
+  </div>
 );
 
 export default NavigationBar;
