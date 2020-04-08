@@ -3,7 +3,7 @@ import "./menu-item.scss";
 
 import DirectoryButton from "../directory-button/directory-button.component";
 
-const MenuItem = ({ description, imageUrl, width, height }) => (
+const MenuItem = ({ description, categoryId, imageUrl, width, height }) => (
   <div className="menu-container" style={{ width: width, height: height }}>
     <div
       className="background-container"
@@ -12,7 +12,7 @@ const MenuItem = ({ description, imageUrl, width, height }) => (
       }}
     >
       <div className="text-container">
-        <DirectoryButton description={description} />
+        <DirectoryButton description={description} categoryId={categoryId} />
       </div>
     </div>
   </div>

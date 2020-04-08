@@ -17,12 +17,14 @@ const HomePageDirectory = () => (
       <h1 className="title">men</h1>
       <MenuItem
         description="new arrivals"
+        categoryId="men new arrivals"
         imageUrl={menPreview}
         width="100%"
         height="200px"
       />
       <MenuItem
         description="tops"
+        categoryId="men tops"
         imageUrl={menTops}
         width="100%"
         height="200px"
@@ -30,12 +32,14 @@ const HomePageDirectory = () => (
       <div className="bottom-menu">
         <MenuItem
           description="pants"
+          categoryId="men pants"
           imageUrl={menPants}
           width="45%"
           height="200px"
         />
         <MenuItem
           description="shorts"
+          categoryId="men shorts"
           imageUrl={menShorts}
           width="45%"
           height="200px"
@@ -46,12 +50,14 @@ const HomePageDirectory = () => (
       <h1 className="title">women</h1>
       <MenuItem
         description="new arrivals"
+        categoryId="women new arrivals"
         imageUrl={womenPreview}
         width="100%"
         height="200px"
       />
       <MenuItem
         description="tops"
+        categoryId="women tops"
         imageUrl={womenTops}
         width="100%"
         height="200px"
@@ -59,12 +65,14 @@ const HomePageDirectory = () => (
       <div className="bottom-menu">
         <MenuItem
           description="dresses"
+          categoryId="women dresses"
           imageUrl={womenDresses}
           width="45%"
           height="200px"
         />
         <MenuItem
           description="skirts"
+          categoryId="women skirts"
           imageUrl={womenSkirt}
           width="45%"
           height="200px"
