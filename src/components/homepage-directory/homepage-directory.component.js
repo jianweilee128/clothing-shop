@@ -1,85 +1,53 @@
 import React from "react";
 import "./homepage-directory.scss";
-import menPreview from "../../resources/showcase/men-section.jpg";
-import menTops from "../../resources/showcase/men-tops.jpg";
-import menShorts from "../../resources/showcase/men-shorts.jpg";
-import menPants from "../../resources/showcase/men-pants.jpg";
 
-import womenPreview from "../../resources/showcase/women-section.jpg";
-import womenTops from "../../resources/showcase/women-tops.jpg";
-import womenDresses from "../../resources/showcase/women-dresses.jpg";
-import womenSkirt from "../../resources/showcase/women-skirt.jpg";
+import { createStructuredSelector } from "reselect";
+import { connect } from "react-redux";
+import {
+  selectMenLowerSection,
+  selectMenUpperSection,
+  selectWomenLowerSection,
+  selectWomenUpperSection,
+} from "../../redux/directory/directory.selector";
+
 import MenuItem from "../menu-item/menu-item.component";
 
-const HomePageDirectory = () => (
+const HomePageDirectory = ({
+  menLowerSections,
+  menUpperSections,
+  womenLowerSections,
+  womenUpperSections,
+}) => (
   <div className="preview-container">
     <div className="men-container">
-      <h1 className="title">men</h1>
-      <MenuItem
-        description="new arrivals"
-        categoryId="men new arrivals"
-        imageUrl={menPreview}
-        width="100%"
-        height="200px"
-      />
-      <MenuItem
-        description="tops"
-        categoryId="men tops"
-        imageUrl={menTops}
-        width="100%"
-        height="200px"
-      />
+      {menUpperSections.map(({ id, ...otherProps }) => (
+        <MenuItem key={id} {...otherProps} />
+      ))}
+
       <div className="bottom-menu">
-        <MenuItem
-          description="pants"
-          categoryId="men pants"
-          imageUrl={menPants}
-          width="45%"
-          height="200px"
-        />
-        <MenuItem
-          description="shorts"
-          categoryId="men shorts"
-          imageUrl={menShorts}
-          width="45%"
-          height="200px"
-        />
+        {menLowerSections.map(({ id, ...otherProps }) => (
+          <MenuItem key={id} {...otherProps} />
+        ))}
       </div>
     </div>
     <div className="women-container">
-      <h1 className="title">women</h1>
-      <MenuItem
-        description="new arrivals"
-        categoryId="women new arrivals"
-        imageUrl={womenPreview}
-        width="100%"
-        height="200px"
-      />
-      <MenuItem
-        description="tops"
-        categoryId="women tops"
-        imageUrl={womenTops}
-        width="100%"
-        height="200px"
-      />
+      {womenUpperSections.map(({ id, ...otherProps }) => (
+        <MenuItem key={id} {...otherProps} />
+      ))}
       <div className="bottom-menu">
-        <MenuItem
-          description="dresses"
-          categoryId="women dresses"
-          imageUrl={womenDresses}
-          width="45%"
-          height="200px"
-        />
-        <MenuItem
-          description="skirts"
-          categoryId="women skirts"
-          imageUrl={womenSkirt}
-          width="45%"
-          height="200px"
-        />
+        {womenLowerSections.map(({ id, ...otherProps }) => (
+          <MenuItem key={id} {...otherProps} />
+        ))}
       </div>
     </div>
   </div>
 );
 
-export default HomePageDirectory;
+const mapStateToProps = createStructuredSelector({
+  menUpperSections: selectMenUpperSection,
+  womenUpperSections: selectWomenUpperSection,
+  menLowerSections: selectMenLowerSection,
+  womenLowerSections: selectWomenLowerSection,
+});
+
+export default connect(mapStateToProps)(HomePageDirectory);

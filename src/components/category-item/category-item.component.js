@@ -11,7 +11,7 @@ const CategoryItem = ({ imageUrl }) => (
       }}
     >
       <div className="text-container">
-        <LinkButton description="add to cart" />
+        <LinkButton description={"add to cart"} />
       </div>
     </div>
   </div>

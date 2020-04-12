@@ -7,4 +7,9 @@
     padding: 20px;
     margin: 20px 0;
   }
+
+  .category-directory-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

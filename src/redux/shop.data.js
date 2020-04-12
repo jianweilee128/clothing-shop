@@ -1,0 +1,296 @@
+const SHOP_DATA = [
+  {
+    id: 1,
+    title: "Men New Arrivals",
+    routeName: "men new arrivals",
+    imageUrl: "https://i.ibb.co/BnVk19h/men-new-arrival.jpg",
+    items: [
+      {
+        id: 1,
+        name: "Black Teal Shirt",
+        imageUrl: "https://i.ibb.co/BBc9P5D/black-teal-shirt.jpg",
+        price: 65,
+      },
+      {
+        id: 2,
+        name: "Red Black Striped Shirt",
+        imageUrl: "https://i.ibb.co/6JP5XnY/red-black-striped-shirt.jpg",
+        price: 55,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Men Tops",
+    routeName: "men tops",
+    imageUrl: "https://i.ibb.co/MStdtnB/men-tops.jpg",
+    items: [
+      {
+        id: 1,
+        name: "Black Polka Shirt",
+        imageUrl: "https://i.ibb.co/vXQJN68/black-polka-shirt.jpg",
+        price: 17,
+      },
+      {
+        id: 2,
+        name: "Blue Checker Shirt",
+        imageUrl: "https://i.ibb.co/VD6MXpf/blue-checker-shirt.jpg",
+        price: 15,
+      },
+      {
+        id: 3,
+        name: "Blue-Red Plaid Shirt",
+        imageUrl: "https://i.ibb.co/XzYFd7c/blue-red-plaid-shirt.jpg",
+        price: 24,
+      },
+      {
+        id: 4,
+        name: "Orange Striped Shirt",
+        imageUrl: "https://i.ibb.co/gJ1P6Nv/orange-stripe-shirt.jpg",
+        price: 21,
+      },
+      {
+        id: 5,
+        name: "Outcast Shirt",
+        imageUrl: "https://i.ibb.co/ykd4c8X/outcast-shirt.jpg",
+        price: 35,
+      },
+      {
+        id: 6,
+        name: "Parrot Print Shirt",
+        imageUrl: "https://i.ibb.co/jJLk2VP/parrot-print-shirt.jpg",
+        price: 23,
+      },
+      {
+        id: 7,
+        name: "Red Sports Shirt",
+        imageUrl: "https://i.ibb.co/7kb1ZRP/red-blue-sports-shirt.jpg",
+        price: 22,
+      },
+      {
+        id: 8,
+        name: "Tealer Shirt",
+        imageUrl: "https://i.ibb.co/4gmnY9f/tealer-shirt.jpg",
+        price: 14,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Men Pants",
+    routeName: "men pants",
+    imageUrl: "https://i.ibb.co/DVgp0D5/men-pants.jpg",
+    items: [
+      {
+        id: 1,
+        name: "Blue Denim",
+        imageUrl: "https://i.ibb.co/YdDKLgd/blue-denim.jpg",
+        price: 25,
+      },
+      {
+        id: 2,
+        name: "Blue Denim Pants",
+        imageUrl: "https://i.ibb.co/qWnJzNZ/blue-denim-pants.jpg",
+        price: 27,
+      },
+      {
+        id: 3,
+        name: "Blue Pants",
+        imageUrl: "https://i.ibb.co/GHvKd6N/blue-pants.jpg",
+        price: 30,
+      },
+      {
+        id: 4,
+        name: "Brown Pants",
+        imageUrl: "https://i.ibb.co/9rGsr6G/brown-pants.jpg",
+        price: 19,
+      },
+      {
+        id: 5,
+        name: "Grey Pants",
+        imageUrl: "https://i.ibb.co/VxDpPFT/grey-pants.jpg",
+        price: 17,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Men Shorts",
+    routeName: "men shorts",
+    imageUrl: "https://i.ibb.co/DRLb0TK/men-shorts.jpg",
+    items: [
+      {
+        id: 1,
+        name: "Blue Short",
+        imageUrl: "https://i.ibb.co/2PrK7BJ/blue-shorts.jpg",
+        price: 10,
+      },
+      {
+        id: 2,
+        name: "Brown Short",
+        imageUrl: "https://i.ibb.co/mC89pc3/brown-shorts.jpg",
+        price: 12,
+      },
+      {
+        id: 3,
+        name: "Lime Green Short",
+        imageUrl: "https://i.ibb.co/QmfjXhy/lime-green-short.jpg",
+        price: 13,
+      },
+      {
+        id: 4,
+        name: "Olive Green Short",
+        imageUrl: "https://i.ibb.co/X8jrhVy/olive-green-short.jpg",
+        price: 15,
+      },
+      {
+        id: 5,
+        name: "Orange Short",
+        imageUrl: "https://i.ibb.co/cCLxTVR/orange-short.jpg",
+        price: 20,
+      },
+      {
+        id: 6,
+        name: "Red Short",
+        imageUrl: "https://i.ibb.co/c2KYwQ1/red-shorts.jpg",
+        price: 32,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Women New Arrivals",
+    routeName: "women new arrivals",
+    imageUrl: "https://i.ibb.co/GQbbDHt/women-new-arrival.jpg",
+    items: [
+      {
+        id: 1,
+        name: "Red Short Skirt",
+        imageUrl: "https://i.ibb.co/WpFG7vn/red-short-skirt.jpg",
+        price: 55,
+      },
+      {
+        id: 2,
+        name: "Silver Dress",
+        imageUrl: "https://i.ibb.co/Q702KB2/silver-dress.jpg",
+        price: 87,
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Women Tops",
+    routeName: "women tops",
+    imageUrl: "https://i.ibb.co/YNV6sy6/women-tops.jpgUrl",
+    items: [
+      {
+        id: 1,
+        name: "Blue Dress Shirt",
+        imageUrl: "https://i.ibb.co/XLyht9D/blue-dress-shirt.jpg",
+        price: 69,
+      },
+      {
+        id: 2,
+        name: "Happy Shirt",
+        imageUrl: "https://i.ibb.co/G7shc61/happy-shirt.jpg",
+        price: 40,
+      },
+      {
+        id: 3,
+        name: "Red Long Sleeved",
+        imageUrl: "https://i.ibb.co/7pp0grq/red-long-sleeved-shirt.jpg",
+        price: 45,
+      },
+      {
+        id: 4,
+        name: "Red White Checkered Shirt",
+        imageUrl: "https://i.ibb.co/s2dM4hN/red-white-checkered-shirt.jpg",
+        price: 35,
+      },
+      {
+        id: 5,
+        name: "Plain White Shirt",
+        imageUrl: "https://i.ibb.co/jTr5dfr/white-shirt.jpg",
+        price: 15,
+      },
+      {
+        id: 6,
+        name: "White Sleveless Shirt",
+        imageUrl: "https://i.ibb.co/4M7y1cc/white-sleveless-shirt.jpg",
+        price: 26,
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Women Dresses",
+    routeName: "women dresses",
+    imageUrl: "https://i.ibb.co/x3n7yzh/women-dresses.jpg",
+    items: [
+      {
+        id: 1,
+        name: "Floral Dress",
+        imageUrl: "https://i.ibb.co/qdZjrGX/floral-dress.jpg",
+        price: 60,
+      },
+      {
+        id: 2,
+        name: "Lace Dress",
+        imageUrl: "https://i.ibb.co/1RJ0jbz/lace-dress.jpg",
+        price: 51,
+      },
+      {
+        id: 3,
+        name: "White Dress",
+        imageUrl: "https://i.ibb.co/Mk5hhCp/white-dress.jpg",
+        price: 55,
+      },
+      {
+        id: 4,
+        name: "White Ribbon Dress",
+        imageUrl: "https://i.ibb.co/2gQKK3p/white-ribbon-dress.jpg",
+        price: 56,
+      },
+      {
+        id: 5,
+        name: "Black Dress",
+        imageUrl: "https://i.ibb.co/KGNfZGk/black-dress.jpg",
+        price: 80,
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Women Skirts",
+    routeName: "women skirts",
+    imageUrl: "https://i.ibb.co/Jd8Btqf/women-skirt.jpg",
+    items: [
+      {
+        id: 1,
+        name: "Floral Skirt",
+        imageUrl: "https://i.ibb.co/f0zP0Hb/floral-skirt.jpg",
+        price: 20,
+      },
+      {
+        id: 2,
+        name: "Red Long Skirt",
+        imageUrl: "https://i.ibb.co/9gqkMRs/red-long-skirt.jpg",
+        price: 21,
+      },
+      {
+        id: 3,
+        name: "White Striped Skirt",
+        imageUrl: "https://i.ibb.co/fSD2SYX/white-striped-skirt.jpg",
+        price: 28,
+      },
+      {
+        id: 4,
+        name: "Yellow Checkered Skirt",
+        imageUrl: "https://i.ibb.co/FKCZxjH/yellow-checkered-skirt.jpg",
+        price: 35,
+      },
+    ],
+  },
+];
+
+export default SHOP_DATA;

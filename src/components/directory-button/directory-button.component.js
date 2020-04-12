@@ -3,8 +3,8 @@ import "./directory-button.scss";
 
 import { Link } from "react-router-dom";
 
-const DirectoryButton = ({ description, categoryId }) => (
-  <Link className="btn-link" to={`/${categoryId}`}>
+const DirectoryButton = ({ description, routeName }) => (
+  <Link className="btn-directory" to={`/${routeName}`}>
     {description}
   </Link>
 );
