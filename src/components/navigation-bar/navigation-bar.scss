@@ -7,7 +7,7 @@ $font-color: #18181e;
   font-size: 1.3rem;
   color: #18181e;
   box-sizing: border-box;
-  padding: 40px 70px;
+  padding: 40px 140px;
   text-transform: uppercase;
 
   .title {
@@ -27,5 +27,6 @@ $font-color: #18181e;
 
   .item {
     margin: 0 20px;
+    cursor: pointer;
   }
 }

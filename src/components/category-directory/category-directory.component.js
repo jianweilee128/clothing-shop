@@ -10,8 +10,8 @@ const CategoryDirectory = ({ category, section }) => (
   <div className="category-directory-container">
     <h1>{category}</h1>
     <div className="category-directory-items">
-      {section[0].items.map(({ id, ...otherProps }) => (
-        <CategoryItem key={id} {...otherProps} />
+      {section[0].items.map((item) => (
+        <CategoryItem key={item.id} item={item} />
       ))}
     </div>
   </div>
