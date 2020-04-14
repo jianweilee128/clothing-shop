@@ -6,16 +6,19 @@ import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 import { selectItemsInSection } from "../../redux/directory/directory.selector";
 
-const CategoryDirectory = ({ category, section }) => (
-  <div className="category-directory-container">
-    <h1>{category}</h1>
-    <div className="category-directory-items">
-      {section[0].items.map((item) => (
-        <CategoryItem key={item.id} item={item} />
-      ))}
+const CategoryDirectory = ({ category, section }) => {
+  console.log(section[0]);
+  return (
+    <div className="category-directory-container">
+      <h1>{category}</h1>
+      <div className="category-directory-items">
+        {section[0].items.map((item) => (
+          <CategoryItem key={item.id} item={item} />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const mapStateToProps = (state, props) =>
   createStructuredSelector({

@@ -1,12 +1,13 @@
 import React from "react";
 import "./cart-dropdown.scss";
-import LinkButton from "../link-button/link-button.component";
+import { Link } from "react-router-dom";
 import CartItem from "../cart-item/cart-item.component";
 import { createStructuredSelector } from "reselect";
 import { connect } from "react-redux";
 import { selectCartItems } from "../../redux/cart/cart.selector";
+import { toggleCartDropdown } from "../../redux/cart/cart.actions";
 
-const CartDropdown = ({ cartItems }) => (
+const CartDropdown = ({ cartItems, toggleCartDropdown }) => (
   <div className="cart-dropdown-container">
     <div className="cart-dropdown-item-container">
       {cartItems.length ? (
@@ -17,8 +18,14 @@ const CartDropdown = ({ cartItems }) => (
         <span className="cart-empty">Your cart is empty</span>
       )}
     </div>
-    <div className="checkout-button">
-      <LinkButton description="checkout" />
+    <div className="dropdown-checkout-button">
+      <Link
+        className="btn-checkout"
+        to="/checkout"
+        onClick={toggleCartDropdown}
+      >
+        checkout
+      </Link>
     </div>
   </div>
 );
@@ -27,4 +34,8 @@ const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
 });
 
-export default connect(mapStateToProps)(CartDropdown);
+const mapDispatchToProps = (dispatch) => ({
+  toggleCartDropdown: () => dispatch(toggleCartDropdown()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CartDropdown);

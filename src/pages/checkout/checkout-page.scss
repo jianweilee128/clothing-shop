@@ -1,4 +1,26 @@
-.btn-link {
+.checkout-page-container {
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.checkout-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 40px 0;
+}
+
+.cart-total {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 40px 30px;
+}
+
+.checkout-button {
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 30px;
   min-width: 165px;
   text-decoration: none;
   width: auto;
@@ -13,7 +35,6 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-
   background-color: black;
   color: white;
   border: none;
