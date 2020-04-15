@@ -3,10 +3,11 @@
   height: 350px;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 
   .background-container {
     width: 100%;
@@ -25,7 +26,7 @@
   }
 
   .add-to-cart-button {
-    min-width: 165px;
+    min-width: 185px;
     text-decoration: none;
     width: auto;
     height: 50px;
@@ -42,11 +43,34 @@
     background-color: black;
     color: white;
     border: none;
+    opacity: 0;
 
     &:hover {
       background-color: white;
       color: black;
       border: 1px solid black;
+      opacity: 1;
     }
   }
+}
+
+.category-item-description {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.category-item-name {
+  width: 90%;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 1px;
+}
+
+.category-item-price {
+  width: 10%;
+  text-align: right;
+  margin-right: 90px;
 }

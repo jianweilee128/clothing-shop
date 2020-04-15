@@ -1,5 +1,4 @@
-// Obtain domain and clientId by creating account at Auth0
 {
-  "domain": "DOMAIN_GIVEN_HERE",
-  "clientId": "CLIENT_ID_GIVEN"
+  "domain": "YOUR_DOMAIN",
+  "clientId": "YOUR_CLIENT_ID"
 }

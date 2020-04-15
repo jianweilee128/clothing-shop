@@ -9,14 +9,14 @@ import {
   selectCartTotal,
 } from "../../redux/cart/cart.selector";
 import { createStructuredSelector } from "reselect";
-import { useAuth0 } from "../../react-auth0-spa";
+// import { useAuth0 } from "../../react-auth0-spa";
 
 const CheckoutPage = ({ cartItems, cartTotal }) => {
-  const { loading } = useAuth0();
+  // const { loading } = useAuth0();
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  // if (loading) {
+  //   return <div>Loading...</div>;
+  // }
   return (
     <React.Fragment>
       <NavigationBar />
