@@ -7,7 +7,6 @@ import { connect } from "react-redux";
 import { selectItemsInSection } from "../../redux/directory/directory.selector";
 
 const CategoryDirectory = ({ category, section }) => {
-  console.log(section[0]);
   return (
     <div className="category-directory-container">
       <h1>{category}</h1>
