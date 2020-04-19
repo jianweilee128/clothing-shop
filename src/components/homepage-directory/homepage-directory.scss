@@ -3,6 +3,10 @@
   height: 100%;
   display: flex;
   flex-direction: row;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .men-container {
@@ -10,6 +14,11 @@
   display: flex;
   flex-direction: column;
   margin: 0 50px;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .women-container {
@@ -17,10 +26,9 @@
   display: flex;
   flex-direction: column;
   margin: 0 50px;
-}
 
-.bottom-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
 }

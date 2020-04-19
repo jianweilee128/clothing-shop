@@ -5,7 +5,7 @@ import { addItem } from "../../redux/cart/cart.actions";
 import { connect } from "react-redux";
 
 const CategoryItem = ({ item, addItem }) => (
-  <div className="category-item-container">
+  <React.Fragment>
     <div className="item-container">
       <div
         className="background-container"
@@ -18,12 +18,12 @@ const CategoryItem = ({ item, addItem }) => (
           add to cart
         </button>
       </div>
+      <div className="category-item-description">
+        <span className="category-item-name">{item.name}</span>
+        <span className="category-item-price">{item.price}</span>
+      </div>
     </div>
-    <div className="category-item-description">
-      <span className="category-item-name">{item.name}</span>
-      <span className="category-item-price">{item.price}</span>
-    </div>
-  </div>
+  </React.Fragment>
 );
 
 const mapDispatchToProps = (dispatch) => ({

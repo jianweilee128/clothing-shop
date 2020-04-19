@@ -7,23 +7,13 @@ export const selectCollections = createSelector(
   (shop) => shop.collections
 );
 
-export const selectMenUpperSection = createSelector(
+export const selectMenSection = createSelector(
   [selectCollections],
-  (collections) => collections.filter((section) => section.id <= 2)
+  (collections) => collections.filter((section) => section.id <= 4)
 );
-export const selectMenLowerSection = createSelector(
+export const selectWomenSection = createSelector(
   [selectCollections],
-  (collections) =>
-    collections.filter((section) => section.id <= 4 && section.id > 2)
-);
-export const selectWomenUpperSection = createSelector(
-  [selectCollections],
-  (collections) =>
-    collections.filter((section) => section.id <= 6 && section.id > 4)
-);
-export const selectWomenLowerSection = createSelector(
-  [selectCollections],
-  (collections) => collections.filter((section) => section.id > 6)
+  (collections) => collections.filter((section) => section.id > 4)
 );
 
 export const selectItemsInSection = (category) =>

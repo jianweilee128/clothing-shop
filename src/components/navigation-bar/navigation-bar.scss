@@ -29,4 +29,9 @@ $font-color: #18181e;
     margin: 0 20px;
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem;
+    padding: 40px 10px;
+  }
 }

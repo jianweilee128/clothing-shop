@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid darkgrey;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 0.6rem;
+  }
 }
 
 .checkout-header-column {
