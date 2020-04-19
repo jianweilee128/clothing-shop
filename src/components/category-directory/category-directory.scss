@@ -1,16 +1,24 @@
 .category-directory-container {
   margin: 0 80px;
 
+  @media only screen and (max-width: 600px) {
+    margin: 0 20px;
+  }
+
   h1 {
     text-align: center;
     text-transform: uppercase;
     padding: 20px;
     margin: 20px 0;
+
+    @media only screen and (max-width: 600px) {
+      padding: 0;
+    }
   }
 
   .category-directory-items {
     display: grid;
-    align-items: center;
+    justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 1rem;
 
