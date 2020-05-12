@@ -5,13 +5,13 @@ import ErrorBoundary from "./components/error-boundary/error-boundary";
 import NavigationBar from "./components/navigation-bar/navigation-bar.component";
 import Spinner from "./components/spinner/spinner.component";
 
-import { useAuth0 } from "./react-auth0-spa";
+import { useAuth0 } from "./utils/react-auth0-spa";
 
 const HomePage = lazy(() => import("./pages/homepage/homepage"));
 
-const CategoryPage = lazy(() => import("./pages/category/category-page"));
+const CategoryPage = lazy(() => import("./pages/category-page/category-page"));
 
-const CheckoutPage = lazy(() => import("./pages/checkout/checkout-page"));
+const CheckoutPage = lazy(() => import("./pages/checkout-page/checkout-page"));
 
 const App = () => {
   const { loading } = useAuth0();

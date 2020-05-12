@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { ReactComponent as CartIcon } from "../../resources/icons/cartIcon.svg";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
-import { useAuth0 } from "../../react-auth0-spa";
+import { useAuth0 } from "../../utils/react-auth0-spa";
 
 import { toggleCartDropdown } from "../../redux/cart/cart.actions";
 import { selectCartHidden } from "../../redux/cart/cart.selector";
