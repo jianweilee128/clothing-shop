@@ -3,8 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  width: 100vw;
 
   img {
-    padding: 40px;
+    padding: 3rem;
+    @media only screen and (max-width: 768px) {
+      padding: 1rem;
+    }
   }
 }

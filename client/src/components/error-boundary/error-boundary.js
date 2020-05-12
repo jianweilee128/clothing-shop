@@ -24,10 +24,10 @@ class ErrorBoundary extends React.Component {
       return (
         <div className="error-boundary-container">
           <img
+            className="error-img"
             src="https://cdn.pixabay.com/photo/2016/10/06/19/59/sign-1719892_960_720.png"
             alt="error boundary"
           />
-          <h1>Something went wrong.</h1>
         </div>
       );
     }
