@@ -1,7 +1,7 @@
 import React from "react";
 import "./menu-item.scss";
 
-import DirectoryButton from "../directory-button/directory-button.component";
+import { Link } from "react-router-dom";
 
 const MenuItem = ({ routeName, title, imageUrl }) => (
   <div className="menu-container">
@@ -11,9 +11,9 @@ const MenuItem = ({ routeName, title, imageUrl }) => (
         backgroundImage: `url(${imageUrl})`,
       }}
     >
-      <div className="text-container">
-        <DirectoryButton description={title} routeName={routeName} />
-      </div>
+      <Link className="btn-directory" to={`/category/${routeName}`}>
+        {title}
+      </Link>
     </div>
   </div>
 );

@@ -7,14 +7,14 @@ $font-color: #18181e;
   font-size: 1.3rem;
   color: #18181e;
   box-sizing: border-box;
-  padding: 40px 50px;
+  padding: 2rem 4rem 2rem 4rem;
   text-transform: uppercase;
 
   .title {
     text-decoration: none;
     color: #18181e;
     box-sizing: border-box;
-    padding: 0 30px;
+    margin: 0 20px;
   }
 
   .nav-items {
@@ -30,8 +30,12 @@ $font-color: #18181e;
     cursor: pointer;
   }
 
+  @media only screen and (max-width: 768px) {
+    font-size: 1rem;
+    padding: 2rem 2rem 1rem 2rem;
+  }
   @media only screen and (max-width: 600px) {
     font-size: 1rem;
-    padding: 40px 10px;
+    padding: 2rem 1rem 1rem 1rem;
   }
 }

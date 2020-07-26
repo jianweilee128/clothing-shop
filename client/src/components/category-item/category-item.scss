@@ -36,12 +36,11 @@
     font-family: "Source Sans Pro";
     font-weight: bolder;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
     background-color: black;
     color: white;
     border: none;
     opacity: 0;
+    margin-top: 200px;
 
     &:hover {
       background-color: white;

@@ -12,7 +12,7 @@ const CategoryItem = ({ item, addItem }) => (
         style={{
           backgroundImage: `url(${item.imageUrl})`,
         }}
-      ></div>
+      />
       <div className="text-container">
         <button className="add-to-cart-button" onClick={() => addItem(item)}>
           add to cart

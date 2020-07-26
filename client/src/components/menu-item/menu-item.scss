@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 20px 0;
+  margin: 1rem;
 
   .background-container {
     width: 100%;
@@ -20,14 +20,37 @@
     justify-content: center;
   }
 
-  .text-container {
+  .btn-directory {
+    min-width: 165px;
+    text-decoration: none;
     height: 90px;
-    padding: 0 25px;
+    width: auto;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro";
+    font-weight: lighter;
+    opacity: 0.8;
+
+    cursor: pointer;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    opacity: 0.7;
-    position: absolute;
+    align-items: center;
+
+    background-color: white;
+    color: black;
+    border: none;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.2rem;
+      padding: 0 10px;
+    }
   }
 }
