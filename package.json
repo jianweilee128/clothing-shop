@@ -1,5 +1,5 @@
 {
-  "name": "clothing-shop",
+  "name": "clothing-shop-server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -22,11 +22,11 @@
   "homepage": "https://github.com/jianweilee128/clothing-shop#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
-    "stripe": "^8.50.0"
+    "stripe": "^8.149.0"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0"
+    "concurrently": "^5.3.0"
   }
 }
